@@ -1,0 +1,119 @@
+/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+  --nav-bg-clr: #e2e8f0;
+  --btn-clr: #cbd5e1;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  transition: all ease-out .5s;
+}
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+body {
+  position: relative;
+  margin-top: 7.5rem;
+  text-rendering: optimizeSpeed;
+  padding-inline: 8vw;
+}
+body::-webkit-scrollbar{
+  width: .3rem;
+  background-color: #bbbbbb;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #da5b00;
+  border-radius: 1rem;
+}
+#floating-mini-cursor {
+  background-color: #e04d0e;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  filter: blur(1rem);
+}
+#big-slow-blury-flaoting-cursor {
+  height: 200px;
+  width: 200px;
+  background-color: #eb5f234c;
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(2rem);
+}
+header {
+  z-index: 2;
+  background-color: var(--nav-bg-clr);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding-inline: 8vw;
+  height: 7.5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 .2rem .4rem #6b7280;
+}
+#logo {
+  font-size: 3vw;
+  -webkit-text-stroke: .2rem #2563eb;;
+  font-weight: 900;
+  color: transparent;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+}
+#nav-icon {
+  background-color: #0284c7;
+  height: 5rem;
+  aspect-ratio: 1;
+  border-radius: 1rem;
+  font-size: 1.5vw;
+  color: whitesmoke;
+  border: transparent;
+  cursor: pointer;
+  outline: .1rem solid #f1f5f9;
+  outline-offset: -.3rem;
+}
+h1 {
+  text-align: center;
+  background-color: red;
+  font-size: 4rem;
+  color: white;
+}
+#nav-container {
+  z-index: 2 !important;
+  background-color: var(--nav-bg-clr);
+  position: fixed;
+  padding-block: .5rem;
+  right: 8vw;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  transform: translateX(calc(100% + 8vw));
+  transition: all ease-in-out .3s;
+}
+#nav-container a {
+  color: #020617;
+  background-color: var(--btn-clr);
+  font-size: 1.35vw;
+  font-weight: 500;
+  padding: .6rem 2.2rem;
+  margin: 1.5rem 2.5rem;
+  text-align: center;
+  display: block;
+  border-radius: 1rem;
+}
+.apear {
+  transform: translateX(0%) !important;
+}
+/* makes blury too */
+main {
+  padding-block: .7rem;
+}
